@@ -1,0 +1,17 @@
+// VARIABLES //
+$main-color: #FF6060;
+$color-white: #FFF;
+$color-black: #000;
+$background-color-grey: #F6F6F6;
+
+// MIXINS //
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+header {
+    padding: 50px 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        font-size: 24px;
+        color: $color-black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__logo>img {
+        height: 68px;
+    }
+}
