@@ -19,7 +19,11 @@ header {
         color: $color-black;
 
         &:hover {
-            text-decoration: underline;
+            border-bottom: solid 2px $color-black;
+        }
+
+        &.active {
+            border-bottom: solid 2px $color-black;
         }
     }
 

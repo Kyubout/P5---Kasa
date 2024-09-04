@@ -1,6 +1,6 @@
 import Banner from "../components/Banner/Banner"
 import bannerHome from "../assets/banner/banner_home.png"
-// import Card from "../components/Card/Card"
+import Cards from "../components/Cards/Cards"
 
 function Home() {
   document.title = "Kasa - Accueil"
@@ -12,7 +12,7 @@ function Home() {
         opacity={"rgba(0, 0, 0, 0.6)"}
         shadow={"0px 4px 4px rgba(0, 0, 0, 0.5)"}
       />
-      {/* <Card /> */}
+      <Cards />
     </main>
   )
 }
