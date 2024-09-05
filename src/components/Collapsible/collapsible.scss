@@ -1,0 +1,43 @@
+@import "../../index.scss";
+
+.collapsible {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 200px;
+
+
+    &__button {
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        align-items: center;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: $main-color;
+        color: $color-white;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: start;
+        padding: 10px 20px 10px 15px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        background-color: $background-color-grey;
+        border-radius: 5px;
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 30px;
+        margin-top: -8px;
+        overflow: hidden;
+        transition: max-height 2s ease;
+        height: auto;
+        max-height: 300px;
+
+    }
+
+        
+}

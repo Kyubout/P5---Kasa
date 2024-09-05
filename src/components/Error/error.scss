@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    &__title {
+        color: $main-color;
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: $main-color;
+        font-size: 36px;
+        font-weight: 500;
+        padding: 100px 0;
+    }
+
+    &__link {
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 500;
+        border-bottom: solid 2px $color-black;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+}

@@ -11,7 +11,7 @@ function Header() {
         </Link>
         <ul className="navbar__menu">
           <li>
-            <NavLink className="navbar__link" activeClassName="active" to="/">
+            <NavLink className="navbar__link" activeclassname="active" to="/">
               Accueil
             </NavLink>
           </li>
@@ -19,7 +19,7 @@ function Header() {
             <NavLink
               to="/a-propos"
               className="navbar__link"
-              activeClassName="active"
+              activeclassname="active"
             >
               A propos
             </NavLink>
