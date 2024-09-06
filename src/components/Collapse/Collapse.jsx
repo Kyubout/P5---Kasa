@@ -1,9 +1,9 @@
-import "./collapsible.scss"
+import "./collapse.scss"
 import arrowUp from "../../assets/arrows/arrow-up.png"
 import PropTypes from "prop-types"
 import { useState } from "react"
 
-function Collapsible({ title, content }) {
+function Collapse({ title, content }) {
   const [visible, setVisible] = useState(false)
   const open = () => {
     setVisible(!visible)
@@ -11,8 +11,8 @@ function Collapsible({ title, content }) {
 
   return (
     <section>
-      <div className={`collapsible ${visible ? "collapsible__active" : ""}`}>
-        <button className="collapsible__button" onClick={open}>
+      <div className={`collapse ${visible ? "collapse__active" : ""}`}>
+        <button className="collapse__button" onClick={open}>
           {title}
           <img
             src={arrowUp}
@@ -21,8 +21,8 @@ function Collapsible({ title, content }) {
           />
         </button>
         {visible && (
-          <div className="collapsible__content">
-            <p className="collapsible__text">{content}</p>
+          <div className="collapse__content">
+            <p className="collapse__text">{content}</p>
           </div>
         )}
       </div>
@@ -30,9 +30,9 @@ function Collapsible({ title, content }) {
   )
 }
 
-Collapsible.propTypes = {
+Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.node.isRequired,
 }
 
-export default Collapsible
+export default Collapse

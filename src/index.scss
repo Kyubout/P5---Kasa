@@ -6,8 +6,7 @@ $color-white: #FFF;
 $color-black: #000;
 $background-color-grey: #F6F6F6;
 
-// MIXINS //
-
+//GENERAL
 * {
   padding: 0;
   margin: 0;
@@ -16,4 +15,10 @@ $background-color-grey: #F6F6F6;
   list-style: none;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto;
 }

@@ -1,10 +1,9 @@
 @import "../../index.scss";
 
-.collapsible {
+.collapse {
     display: flex;
     flex-direction: column;
     margin: 20px 200px;
-
 
     &__button {
         display: flex;
@@ -45,7 +44,7 @@
     }
 
     &__active {
-        .collapsible__content {
+        .collapse__content {
             height: auto;
             position: relative;
             z-index: 1;
