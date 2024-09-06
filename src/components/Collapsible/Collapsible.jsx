@@ -1,4 +1,5 @@
 import "./collapsible.scss"
+import arrowUp from "../../assets/arrows/arrow-up.png"
 import PropTypes from "prop-types"
 import { useState } from "react"
 
@@ -10,14 +11,18 @@ function Collapsible({ title, content }) {
 
   return (
     <section>
-      <div className="collapsible">
+      <div className={`collapsible ${visible ? "collapsible__active" : ""}`}>
         <button className="collapsible__button" onClick={open}>
           {title}
-          {/* <span className="fa-solid fa-chevron-up">^</span> */}
+          <img
+            src={arrowUp}
+            alt="Flèche"
+            className={`arrow ${visible ? "arrow__down" : "arrow__up"}`}
+          />
         </button>
         {visible && (
-          <div className="collapsible__content active">
-            <p>{content}</p>
+          <div className="collapsible__content">
+            <p className="collapsible__text">{content}</p>
           </div>
         )}
       </div>
