@@ -18,7 +18,12 @@ $background-color-grey: #F6F6F6;
 }
 
 body {
-  max-width: 1920px;
+  max-width: 1900px;
   min-width: 320px;
+  margin: auto;
+}
+
+main {
+  max-width: 1240px;
   margin: auto;
 }

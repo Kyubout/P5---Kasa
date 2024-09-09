@@ -3,7 +3,7 @@ import bannerHome from "../assets/banner/banner_home.png"
 import Cards from "../components/Cards/Cards"
 
 function Home() {
-  document.title = "Kasa - Accueil"
+  document.title = "Kasa - Chez vous, partout et ailleurs"
   return (
     <main>
       <Banner

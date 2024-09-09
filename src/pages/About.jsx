@@ -9,7 +9,11 @@ function About() {
     <main>
       <Banner imageUrl={bannerAbout} opacity={"rgba(0, 0, 0, 0.3)"} />
       {dataAbout.map((coll) => (
-        <Collapse key={coll.title} title={coll.title} content={coll.content} />
+        <Collapse
+          key={coll.title}
+          title={coll.title}
+          content={<p>{coll.content}</p>}
+        />
       ))}
     </main>
   )
