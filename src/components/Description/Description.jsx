@@ -2,11 +2,15 @@ import "./description.scss"
 import PropTypes from "prop-types"
 import Collapse from "../Collapse/Collapse"
 import HousingTitle from "../HousingTitle/HousingTitle"
+import HousingProfil from "../HousingProfil/HousingProfil"
 
 function Description({ currentHousing }) {
   return (
     <section className="description">
-      <HousingTitle data={currentHousing} />
+      <div className="infos">
+        <HousingTitle data={currentHousing} />
+        <HousingProfil data={currentHousing} />
+      </div>
       <div className="collapses">
         <Collapse
           title="Description"

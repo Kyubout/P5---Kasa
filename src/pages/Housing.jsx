@@ -1,11 +1,15 @@
 import Slideshow from "../components/Slideshow/Slideshow"
 import data from "../data/dataHousing.json"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import Description from "../components/Description/Description"
 
 function Housing() {
   const { housingId } = useParams()
   const currentHousing = data.find((housing) => housing.id === housingId)
+
+  if (!currentHousing) {
+    return <Navigate to="/error" />
+  }
 
   document.title = `Kasa - ${currentHousing.title}`
 

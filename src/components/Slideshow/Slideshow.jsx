@@ -31,9 +31,11 @@ function Slideshow({ pictures }) {
               src={slide}
               alt={`Slide de la location ${index + 1}/${pictures.length}`}
             />
-            <figcaption className="slide__caption">
-              {index + 1}/{pictures.length}
-            </figcaption>
+            {showArrows && (
+              <figcaption className="slide__caption">
+                {index + 1}/{pictures.length}
+              </figcaption>
+            )}
           </figure>
         ))}
       </div>
