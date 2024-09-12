@@ -5,6 +5,10 @@
     flex-direction: column;
     margin: 40px 100px;
 
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
+
     &__button {
         display: flex;
         justify-content: space-between;
@@ -21,9 +25,19 @@
         font-weight: 700;
         padding: 10px 20px 10px 15px;
 
+        @media (max-width: 768px) {
+            height: 30px;
+            font-size: 13px;
+        }
+
         .arrow {
             height: 14px;
             width: 24px;
+
+            @media (max-width: 768px) {
+                height: 10px;
+                width: 16px;
+            }
 
             &__up {
                 transform: rotate(0);
@@ -43,22 +57,35 @@
         position: relative;
         z-index: 1;
         background-color: $background-color-grey;
-        border-radius: 5px;
+        border-radius: 0 0 5px 5px;
         color: $color-black;
         font-size: 18px;
         font-weight: 400;
         padding: 0 30px;
-        margin-top: -8px;
+        margin-top: -3px;
         height: 100%;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            padding: 0 20px;
+        }
 
         &--open {
             max-height: 500px;
             padding: 30px;
+
+            @media (max-width: 768px) {
+                padding: 20px;
+            }
         }
 
         &--close {
             max-height: 0;
             padding: 0 30px;
+
+            @media (max-width: 768px) {
+                padding: 0 20px;
+            }
         }
     }
 }

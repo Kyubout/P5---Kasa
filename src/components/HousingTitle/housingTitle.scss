@@ -8,18 +8,31 @@
         font-weight: 500;
         color: $main-color;
         padding-bottom: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     .location {
         font-size: 18px;
         font-weight: 500;
         color: $color-black;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 
     .tags {
         display: flex;
         padding-top: 20px;
         gap: 10px;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            padding-top: 10px;
+        }
 
         .tags__item {
             display: flex;
@@ -32,6 +45,13 @@
             height: 25px;
             border-radius: 10px;
             padding: 10px 30px;
+
+            @media (max-width: 768px) {
+                font-size: 10px;
+                height: 18px;
+                border-radius: 5px;
+                padding: 10px 15px;
+            }
         }
     }
 }

@@ -1,8 +1,18 @@
 @import "../../index.scss";
 
 header {
-    padding: 50px 100px;
+    max-width: 1240px;
+    padding: 50px 0;
     width: 100%;
+    margin: auto;
+
+    @media (max-width : 1300px) {
+        padding: 50px 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
 }
 
 .navbar {
@@ -14,10 +24,15 @@ header {
     &__menu {
         display: flex;
         gap: 50px;
+
+        @media (max-width: 768px) {
+            gap: 20px;
+        }
     }
 
     &__link {
         font-size: 24px;
+        font-weight: 500;
         color: $color-black;
 
         &:hover {
@@ -27,9 +42,18 @@ header {
         &.active {
             border-bottom: solid 2px $color-black;
         }
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
     }
 
     &__logo>img {
         height: 68px;
+
+        @media (max-width: 768px) {
+            height: 47px;
+        }
     }
 }

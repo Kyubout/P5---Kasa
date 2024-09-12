@@ -7,6 +7,15 @@
     border-radius: 25px;
     overflow: hidden;
 
+    @media (max-width : 1300px) {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        height: 255px;
+    }
+
     .slideshow {
         height: 100%;
     }
@@ -19,6 +28,10 @@
         opacity: 0;
         transition: opacity 0.4s ease-in-out;
 
+        @media (max-width: 768px) {
+            height: 255px;
+        }
+
         &.active {
             opacity: 1;
         }
@@ -28,6 +41,10 @@
             height: 415px;
             object-fit: cover;
             object-position: center;
+
+            @media (max-width: 768px) {
+                height: 255px;
+            }
         }
 
         &__caption {
@@ -37,6 +54,10 @@
             color: $color-white;
             font-size: 18px;
             font-weight: 500;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
@@ -50,9 +71,20 @@
         padding: 0 20px;
         cursor: pointer;
 
+        @media (max-width: 768px) {
+            top: 48%;
+        }
+
         button {
             background-color: transparent;
             border: none;
+
+            img {
+                @media (max-width: 768px) {
+                    height: 20px;
+                    top: 48%;
+                }
+            }
         }
     }
 }

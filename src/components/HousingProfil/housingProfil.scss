@@ -1,36 +1,64 @@
 @import "../../index.scss";
 
-.host {
+.profil {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
 
-    &__name {
-        color: $main-color;
-        font-size: 18px;
-        font-weight: 500;
-        width: min-content;
-        padding-right: 10px;
-        text-align: right;
+    @media (max-width: 768px) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__img {
-        height: 64px;
-        width: 64px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
+    .host {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &__name {
+            color: $main-color;
+            font-size: 18px;
+            font-weight: 500;
+            width: min-content;
+            padding-right: 10px;
+            text-align: right;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        &__img {
+            height: 64px;
+            width: 64px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+            @media (max-width: 768px) {
+                height: 32px;
+                width: 32px;
+            }
+        }
     }
-}
 
-.rating {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 20px;
-    gap: 10px;
+    .rating {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 20px;
+        gap: 10px;
 
-    &__star {
-        height: 24px;
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+
+        &__star {
+            height: 24px;
+
+            @media (max-width: 768px) {
+                height: 13px;
+            }
+        }
     }
 }
