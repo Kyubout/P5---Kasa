@@ -14,7 +14,6 @@ function Home() {
           </>
         }
         opacity={"rgba(0, 0, 0, 0.6)"}
-        shadow={"0px 4px 4px rgba(0, 0, 0, 0.5)"}
       />
       <Cards />
     </main>

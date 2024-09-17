@@ -7,7 +7,11 @@ function About() {
   document.title = "Kasa - A propos"
   return (
     <main>
-      <Banner imageUrl={bannerAbout} opacity={"rgba(0, 0, 0, 0.3)"} />
+      <Banner
+        imageUrl={bannerAbout}
+        opacity={"rgba(0, 0, 0, 0.3)"}
+        shadow={"none"}
+      />
       {dataAbout.map((coll) => (
         <Collapse
           key={coll.title}
